@@ -10,7 +10,6 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::resource('tasks', 'TasksController');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'TasksController@index');
